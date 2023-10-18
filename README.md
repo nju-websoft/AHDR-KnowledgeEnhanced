@@ -34,7 +34,7 @@ We use score interpolation (i.e., taking the arithmetic mean of the scores of th
 
 ## Experimental Results and Evaluation
 We put all the retrieval results files corresponding to the tables in the paper in `xxx`, which can be reproduced under the guidelines of the above instructions. The result files are json files in the following format:
-```json
+```
 {
   "query_id1": [
     [
@@ -52,7 +52,7 @@ We put all the retrieval results files corresponding to the tables in the paper 
 ```
 
 To evaluate the results, we use two evaluation metrics: normalized discounted cumulative gain (NDCG) and mean average precision (MAP). We provide a evaluation script for obtaining NDCG@5, NDCG@10, MAP@5 and MAP@10, which takes as input a file in the above json format and outputs a json file in the following format: 
-```json
+```
 {
   "each query": {
     "1": {
